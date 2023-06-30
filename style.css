@@ -1,0 +1,115 @@
+:root {
+  --dark-color: #ffffff;
+}
+
+body {
+  font-family: system-ui;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+html { 
+  background: url(netwrok.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+h1 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+label{
+  color: #ffffff;
+}
+
+input{
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 300px;
+}
+
+img {
+  border-radius: 150%;
+  height: 120px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main * {
+  margin-bottom: 12px;
+}
+
+input {
+  text-align: center;
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+/* for styling the autocomplete style */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+button {
+  background: #c00303;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 300px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: black;
+  border-color: #fff;
+  border-width: 4px;
+}
+
+a {
+  font-style: italic;
+  color: #a70505;
+}
+
+/* dark mode css */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  input,
+  input:active {
+    background: var(--dark-color);
+    border-color: #fff;
+    color: #fff;
+  }
+
+  /* for styling the autocomplete style */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
